@@ -9,76 +9,106 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: darkgrey;
+    color: #ffffff;
+    padding-top: 60px; /* Height of the fixed header */
+    padding-bottom: 60px; /* Height of the fixed footer */
 }
 
 /* Navigation styling */
 nav {
-    background-color: #333;
-    color: #fff;
+    position: fixed; /* Fix to the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: darkcyan; /* Background color */
+    color: black;
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1.5em;
+    z-index: 1000; /* Ensure it's on top of other content */
+    font-family: Garamond, serif;
 }
 
 #Name h1 {
     margin: 0;
-    color: #fff;
+    color: #000000;
+}
+
+#tabs {
+    display: flex; /* Use flex for alignment */
 }
 
 #tabs a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     margin: 0 0.5em;
+    padding-top: 10px;
 }
 
 #tabs a:hover {
-    color: #ddd;
+    color: #ff0000; /* Change color on hover */
+    text-decoration: underline; /* Optional underline on hover */
 }
 
 /* Main content styling */
 main {
-    padding: 2em;
+    padding: 3em;
     text-align: center;
 }
 
-#about-header {
-    font-size: 2em;
-    margin-bottom: 1em;
-    color: #444;
+#Projects-box {
+    margin: 0 auto; /* Centering the project box */
 }
 
-/* Styling for each about section */
-.about-section {
+/* Styling for each project section */
+.Project {
     margin-bottom: 2em;
 }
 
-.about-section h2 {
+.Project h2 {
     font-size: 1.5em;
-    color: #333;
+    color: #ffffff;
 }
 
-.about-section img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
+#Project-comments {
     margin: 1em 0;
 }
 
-.about-section p {
-    color: #555;
+#Project-comments img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.Project p {
+    color: #ffffff;
     line-height: 1.5;
     margin-bottom: 1em;
 }
 
+/* Cursive styling for the quote */
+#quote {
+    font-style: italic; /* Makes text italic */
+    font-family: 'Brush Script MT', cursive; /* Adds a specific cursive font */
+    font-size: 2.8em; /* Adjust font size if needed */
+    margin: 1.5em 0; /* Adjust margin for spacing */
+    color: #000000; /* Optional: Change color for emphasis */
+}
+
+
 /* Footer styling */
 footer {
-    background-color: #333;
-    color: #fff;
+    position: fixed; /* Fix to the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: darkcyan; /* Background color */
+    color: #000000;
     text-align: center;
-    padding: 1em;
-    margin-top: 2em;
+    padding: 1em 0; /* Adjusted padding */
+    z-index: 1000; /* Ensure it's on top of other content */
+    font-family: Garamond, serif;
 }
 
 footer p {
@@ -86,6 +116,8 @@ footer p {
 }
 
 footer a img {
-    width: 24px;
-    height: 24px;
+    width: 48px;
+    height: 48px;
+    margin: 0 10px; /* Adjusted margin for spacing */
 }
+
