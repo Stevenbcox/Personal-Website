@@ -1,0 +1,91 @@
+/* Reset default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+#Name h1 {
+    margin: 0;
+    color: #fff;
+}
+
+#tabs a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+#tabs a:hover {
+    color: #ddd;
+}
+
+/* Main content styling */
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+#about-header {
+    font-size: 2em;
+    margin-bottom: 1em;
+    color: #444;
+}
+
+/* Styling for each about section */
+.about-section {
+    margin-bottom: 2em;
+}
+
+.about-section h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.about-section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 1em 0;
+}
+
+.about-section p {
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+}
+
+footer a img {
+    width: 24px;
+    height: 24px;
+}
